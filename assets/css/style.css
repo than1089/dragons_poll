@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+body {
+    color: #b7b7b7;
+    min-height: 100%;
+}
+.text-blue {
+    color: #004785;
+}
+.text-light-blue {
+    color: #00adef;
+}
+.text-golden {
+    color: #dbb259;
+}
+.btn-dragon {
+    background: url(/assets/img/btn-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100px;
+}
+.btn.btn-dragon {
+    color: #fff;
+}
+.dragon-input {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.heading-img {
+    background: url(/assets/img/heading-img.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 35px 30px;
+}
+.heading-img .text {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+.heading-img .text .text-right {
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+.heading-img .dragon-logo {
+    max-width: 400px;
+}
+.bg-dark-blue {
+    background-color: #02337f;
+}
+.bg-skype-blue {
+    background-color: #9ae0fa;
+}
+.bg-light-blue {
+    background-color: #00adef;
+}
+.btn-invest-show {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #97999b;
+    border-radius: 50%;
+    vertical-align: bottom;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-invest-show::after {
+    content: '-';
+    font-size: 24px;
+    line-height: 28px;
+}
+.btn-invest-show.collapsed {
+    background-color: #00adef;
+}
+.btn-invest-show.collapsed::after {
+    content: '+';
+    color: #fff;
+}
+.only-vertical {
+    display: none;
+}
+@media (max-width: 991.98px) {
+    .only-vertical {
+        display: block;
+    }
+    .only-horizontal {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+.logo {
+    margin-bottom: 30px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px 15px;
+}
+.login-form .company-input {
+    margin-bottom: 50px;
+}
+.upper {
+    flex: 1;
+}
+.upper h6, .upper p {
+    font-size: 20px;
+} 
+.city-logo {
+    text-align: center;
+}
+.city-logo img {
+    width: 50px;
+}
+.heading-img {
+    min-height: 100vh;
+}
+.heading-img .dragon-logo {
+    max-width: 100%;
+}
+@media (max-width: 991.98px) {
+    .login-form {
+        min-height: auto;
+    }
+    .md-reverse {
+        flex-direction: column-reverse;
+    }
+    .login-form .company-input {
+        max-width: 500px;
+        margin: 0 auto 20px;
+    }
+    .heading-img {
+        min-height: 40vh;
+    }
+    .upper h6, .upper p {
+        font-size: 24px;
+    }
+    .city-logo {
+        text-align: right;
+    }
+    .city-logo img {
+        width: 100px;
+    }
+}

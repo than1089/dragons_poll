@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.under-section {
+    flex: 1;
+    display: flex;
+}
+.under-section .row:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.welcome-text-horizontal {
+    border-right: 2px solid #dbb259;
+}
+.bucks-remaining {
+    font-size: 34px;
+    float: right;
+    margin-right: 50px;
+}
+.total-invested {
+    font-size: 30px;
+    color: #00adef;
+    margin-left: 5px;
+    font-weight: bold;
+    clear: both;
+}
+.progress {
+    background-color: #b7b7b7;
+}
+.progress.invest-values {
+    background-color: transparent;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.invest-values .balance-value {
+    color: #b7b7b7;
+    text-align: center;
+}
+.project-color {
+    display: inline-block;
+    height: 14px;
+    width: 40px;
+}
+.btn-invest {
+    font-size: 14px;
+    min-width: 90px;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+@media (max-width: 991.98px) {
+    .welcome-text-vertical {
+        font-size: 28px;
+    }
+}
