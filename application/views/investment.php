@@ -1,5 +1,5 @@
 <?php $this->load->view('templates/heading-img'); ?>
-<div class="container-fluid mt-4 under-section">
+<div class="container-fluid mt-4">
     <div class="row">
         <div class="col-lg-3">
             <div class="mt-3 ml-3 welcome-text-horizontal only-horizontal">
@@ -21,7 +21,7 @@
                 <div class="text-light-blue">You have $1M to invest as you wish</div>
             </div>
         </div>
-        <div class="col-lg-9 flex-grow-1">
+        <div class="col-lg-9">
             <div class="bucks-remaining text-blue">
                 <strong class="buck">$350,000</strong><br>
                 TTS Bucks remaining
@@ -61,23 +61,43 @@
         </div>
     </div>
 </div>
-<!-- 
-<div class="modal" tabindex="-1" role="dialog">
+
+<div class="modal fade" tabindex="-1" role="dialog" id="investment-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+            <div class="modal-header text-center">
+                <div class="modal-header-text">
+                    <h3 class="text-golden">Project 1</h3>
+                    <p>Amount ($125,000 remaining)</p>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="/assets/img/close-btn.png" alt="Close" width="20">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="dragon-input text-blue">
+                    </div>
+                    <div class="form-group">
+                        <label for="reason" class="text-light-blue">What are the reasons for investing?<br><span class="small">(optional)</span></label>
+                        <textarea name="reason" id="reason" cols="30" rows="9" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" value="INVEST" class="btn btn-dragon">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div> -->
+</div>
+
+<script>
+$('#investment-modal').modal({
+    show: false
+});
+
+$('.btn-invest').click(function() {
+    $('#investment-modal').modal('show');
+});
+</script>
