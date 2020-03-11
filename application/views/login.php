@@ -10,9 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<img src="/assets/img/bucks.png" alt="Bucks Logo" width="100" class="logo">
 					<h6 class="text-blue">Welcome to TTS Bucks</h6>
 					<p>Please enter yourcompany name below to begin</p>
-					<form action="">
+					<form action="/" method="POST">
 						<div class="form-group text-left company-input">
-							<input type="text" name="company-name" id="company-name" class="dragon-input">
+							<input type="text" name="company-name" id="company-name" class="dragon-input" required>
 							<label for="company-name">Company Name</label>
 						</div>
 						<div class="form-group text-center">

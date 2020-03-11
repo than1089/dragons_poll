@@ -66,6 +66,16 @@
 }
 #investment-modal input[type=text] {
     font-size: 32px;
+    padding-left: 27px;
+}
+#investment-modal .money-input {
+    position: relative;
+}
+#investment-modal .money-input .dollar {
+    left: 5px;
+    font-size: 32px;
+    position: absolute;
+    top: 6px;
 }
 @media (max-width: 991.98px) {
     .welcome-text-vertical {

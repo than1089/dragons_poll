@@ -76,8 +76,9 @@
             </div>
             <div class="modal-body">
                 <form action="">
-                    <div class="form-group">
+                    <div class="form-group money-input">
                         <input type="text" class="dragon-input text-blue">
+                        <span class="dollar text-blue">$</span>
                     </div>
                     <div class="form-group">
                         <label for="reason" class="text-light-blue">What are the reasons for investing?<br><span class="small">(optional)</span></label>
